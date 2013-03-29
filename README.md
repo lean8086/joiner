@@ -68,19 +68,27 @@ To see it in action, run the Joiner app and use it on any browser or any HTML ta
 
 For the first time, you have to install all the dependencies. So, from the Joiner folder:
 
-    $ npm install
+```
+$ npm install
+```
 
 And you can run the app:
 
-    $ npm start
+```
+$ npm start
+```
 
 Or:
 
-    $ node app.js
+```
+$ node app.js
+```
 
 Also, you can set a custom port (`3000` by default):
 
-    $ node app.js 1234
+```
+$ node app.js 1234
+```
 
 
 ### Accessing
@@ -89,11 +97,15 @@ Also, you can set a custom port (`3000` by default):
 
 All the **uncompressed** files of, for example, `package_one`:
 
-    http://localhost:3000/package_one
+```
+http://localhost:3000/package_one
+```
 
 All the **minified** files of, for example, `package_one`:
 
-    http://localhost:3000/package_one/min
+```
+http://localhost:3000/package_one/min
+```
 
 #### As a NodeJS module:
 
@@ -116,10 +128,10 @@ joiner.init('package_one', true);
 
 And you'll receive a response object by listening the `joined` event:
 
-* `raw` (String): The result of concatenate the files.
-* `type` (String): Extension of the result file.
-* `size` (Number): The size of the file in kilobytes.
-* `min` (Boolean): It indicates if the package was compressed.
+* `raw`: The result of concatenate the files (String).
+* `type`: Extension of the result file (String).
+* `size`: The size of the file in kilobytes (Number).
+* `min`: It indicates if the package was compressed (Boolean).
 
 So you can do something like this:
 ```js
@@ -211,7 +223,6 @@ joiner.init(packageName[, min]);
 
 The Joiner is released under the MIT License:
 
-```
 Copyright (c) 2013 Leandro Linares <http://leanlinares.me>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
@@ -219,4 +230,3 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-```
