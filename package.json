@@ -1,0 +1,20 @@
+{
+    "name": "Joiner",
+    "version": "0.0.1",
+    "description": "It lets you write code into separate files, providing a real-time compilation of all files into one.",
+    "author": "http://leanlinares.me",
+    "scripts": {
+        "start": "node ./app"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/llinares/joiner.git"
+    },
+    "dependencies": {
+        "express": "3.x",
+        "uglify-js": "x.x.x",
+        "cssmin": "x.x.x"
+    },
+    "license": "MIT",
+    "engine": "node >= 0.8.15"
+}

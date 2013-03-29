@@ -1,0 +1,36 @@
+{
+    "example_one": [
+        "/Users/foo/development/one.js",
+        "/Users/foo/development/two.js",
+        "/Users/foo/development/three.js"
+    ],
+
+    "example_two": {
+        "group_one": [
+            "/Users/foo/development/one.js",
+            "/Users/foo/development/two.js"
+        ],
+        "group_two": [
+            "/Users/foo/development/three.js",
+            "/Users/foo/development/four.js"
+        ]
+    },
+
+    "example_three": {
+        "group_one": [
+            "/Users/foo/development/one.js",
+            "/Users/foo/development/two.js"
+        ],
+        "group_two": [
+            "/Users/foo/development/three.js",
+            "/Users/foo/development/four.js"
+        ],
+        "output": [
+            "/*! Documentation */",
+            "group_one",
+            "/* End of group */",
+            "/* Begins the second group */",
+            "group_two"
+        ]
+    }
+}
